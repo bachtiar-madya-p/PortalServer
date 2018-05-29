@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="PortalV1.3PU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.hibernate.ejb.HibernatePersistence</provider>
+    <non-jta-data-source>java:app/portalv1</non-jta-data-source>
+    <class>rest.bachtiar.entity.TblUdahdatauser</class>
+    <class>rest.bachtiar.service.kelAbsensi.TblKelabsensi</class>
+    <class>rest.bachtiar.service.kelCuti.TblKelcuti</class>
+    <class>rest.bachtiar.service.kelOvertime.TblKelovertime</class>
+    <class>rest.bachtiar.service.user.TblUser</class>
+    <class>rest.bachtiar.service.sa.TblSa</class>
+    <class>rest.bachtiar.service.rollpwd.TblRoolbackPwd</class>
+    <class>rest.bachtiar.service.newsfeed.TblNewsfeed</class>
+    <class>rest.bachtiar.service.plant.TblPlant</class>
+    <class>rest.bachtiar.service.mailbox.TblMailbox</class>
+    <class>rest.bachtiar.service.dept.TblDept</class>
+    <class>rest.bachtiar.service.feedback.TblFeedback</class>
+    <class>rest.bachtiar.service.feedcmt.TblFeedcmt</class>
+    <class>rest.bachtiar.service.jnssk.TblJnssk</class>
+    <class>rest.bachtiar.service.beasiswa.TblBeasiswa</class>
+    <class>rest.bachtiar.service.bpjs.TblBpjs</class>
+    <class>rest.bachtiar.service.idcard.TblUbahidcard</class>
+    <class>rest.bachtiar.service.feedcmt.TblNewsfeed</class>
+    <class>rest.bachtiar.service.feedcmt.TblUser</class>
+    <class>rest.bachtiar.service.sketarangan.TblSkuser</class>
+    <class>rest.bachtiar.service.sketarangan.TblSketerangan</class>
+    <exclude-unlisted-classes>false</exclude-unlisted-classes>
+    <properties>
+      <property name="javax.persistence.schema-generation.database.action" value="drop-and-create"/>
+    </properties>
+  </persistence-unit>
+</persistence>
